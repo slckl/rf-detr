@@ -38,7 +38,7 @@ keywords = ["machine-learning", "deep-learning", "vision", "ML", "DL", "AI", "DE
 dependencies = [
     "cython",
     "pycocotools",
-    "torch>=1.13.0",
+    "torch>=2.8.0,<2.9.0",
     "torchvision>=0.14.0",
     "fairscale",
     "scipy",
@@ -58,7 +58,13 @@ dependencies = [
     "pydantic",
     "supervision",
     "matplotlib",
-    "roboflow"
+    "roboflow",
+    "onnx>=1.19.1",
+    "onnxsim>=0.4.36",
+    "onnxruntime>=1.20.1",
+    "onnxruntime-gpu>=1.20.2",
+    "onnx-graphsurgeon>=0.5.8",
+    "onnxscript>=0.5.7",
 ]
 
 [project.optional-dependencies]
