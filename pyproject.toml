@@ -65,6 +65,7 @@ dependencies = [
     "onnxruntime-gpu>=1.20.2",
     "onnx-graphsurgeon>=0.5.8",
     "onnxscript>=0.5.7",
+    "colored>=2.3.1",
 ]
 
 [project.optional-dependencies]

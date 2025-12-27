@@ -238,7 +238,9 @@ class RFDETROnnx:
 if __name__ == "__main__":
     # Load ONNX model
     start_time = time.time()
-    model = RFDETROnnx(model_path="output/inference_model.onnx")
+    # model = RFDETROnnx(model_path="output/rfdetr-medium.full.onnx")
+    model = RFDETROnnx(model_path="output/rfdetr-small.full.onnx")
+    # model = RFDETROnnx(model_path="output/rfdetr-medium.simplified.onnx")
     model_load_time = time.time() - start_time
     print(f"Model loading time: {model_load_time:.4f} seconds")
 
